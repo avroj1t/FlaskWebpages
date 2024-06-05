@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskMaster</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/output.css') }}">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/stopwatch.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/google-tasks.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/notes.css' rel='stylesheet'>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <script>
+      ScrollReveal({ duration: 1000 })
+    </script>
+</head>
+<body class="bg-white">
+  <p><br></p>
+  <h1 id="tired"class="font-mono text-center text-lg">Always Tired?</h1>
+  <p><br><br><br><br><br></p>
+
+ <nav class="flex items-center justify-center  ">
+
+      <ul >
+        <li class=" font-light hover:bg-red-500  rounded-md p-8 hover:shadow-2xl hover:delay-3000 hover:translate-y-2 space-x-6"><a href="{{ url_for('todolist') }}"><i class="gg-google-tasks"></i></a></li>
+        <li class="font-light hover:bg-pink-500 rounded-lg p-8 hover:shadow-2xl hover:delay-3000 hover:translate-y-2 space-x-6" ><a href="{{ url_for('topicgen') }}"><i class="gg-notes"></i></a></li>
+        <li class="font-light hover:bg-orange-600 rounded-md p-8 hover:shadow-2xl hover:delay-3000 hover:translate-y-2 space-x-6"><a href="{{ url_for('stopwatch') }}"><i class="gg-stopwatch"></i></a></li>
+      </ul>
+        </nav>
+
+        <p><br><br><br></p>
+         <p><br></p>
+  <h1 id="big"class="font-mono text-center text-xl">Introducing TaskMaster</h1>
+  <h3 id="small"class="font-extralight text-center text-sm ">A solution to all of your boredom</h3>
+<!-- <p id="option" class="text-center bg-slate-950"><br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacus sapien, accumsan eu nibh et, blandit rutrum mauris. Maecenas non dolor tincidunt, vehicula nunc sit amet, pulvinar magna. Phasellus eu sem at justo molestie luctus at id dui. Donec vestibulum at mauris a imperdiet. Aenean mattis interdum enim, vel facilisis lacus imperdiet a. Donec tincidunt sapien vitae faucibus lobortis. Vivamus consectetur mi a nisl pellentesque, a blandit augue eleifend. Integer vel nunc in urna mollis malesuada. Suspendisse in ex hendrerit, consequat mauris sit amet, laoreet elit. Quisque nec purus a ante sollicitudin consectetur. Donec facilisis magna non orci lacinia, et malesuada nisi eleifend. Proin gravida, dui vel porta pharetra, enim eros commodo nulla, et venenatis massa lacus quis urna.
+
+  Suspendisse malesuada tristique iaculis. Vestibulum eget congue nunc. Morbi efficitur dolor vitae suscipit placerat. Aliquam tincidunt suscipit congue. Donec ultrices tincidunt nisl vel molestie. Ut egestas at diam non porttitor. Fusce a purus vel felis viverra commodo id vitae felis.<br> Suspendisse faucibus, nisi ut aliquet bibendum, nulla augue auctor massa, eget fermentum massa magna et ipsum. Vestibulum laoreet arcu metus, ac blandit mauris tincidunt sed. In sapien dui, posuere sit amet rutrum vel, egestas id libero. Maecenas interdum lacus mi, eget rhoncus elit sagittis nec.
+  <br>
+  Morbi urna sapien, commodo ut lorem a, suscipit sollicitudin nunc. In hac habitasse platea dictumst. Sed a lorem metus. Nam ultricies, tellus at sollicitudin ultrices, magna sapien fermentum velit, in malesuada erat ligula sit amet purus. Curabitur sed vulputate risus. Sed auctor tortor augue, id condimentum enim porta quis. Suspendisse euismod vitae lectus a molestie. Duis sagittis libero nisl, a commodo odio interdum eu. Duis quis purus bibendum, congue nunc tempus, luctus erat. Vestibulum sed scelerisque orci. Vivamus auctor tempus massa, sed posuere ipsum eleifend in. Fusce pharetra lobortis congue. Nulla vitae nisl non nunc luctus feugiat.
+  <br>  Fusce felis ipsum, malesuada non lorem non, sollicitudin interdum tortor. Nullam sit amet elit a massa volutpat faucibus. Pellentesque elementum ornare magna quis maximus. Sed congue sollicitudin condimentum. Etiam eget odio consectetur, blandit risus id, scelerisque dolor. <br>Mauris gravida ligula id urna aliquet, quis ultricies ex blandit. Integer dignissim dolor sed neque luctus vulputate. Praesent eu aliquam orci, id sodales metus. Ut pellentesque malesuada risus, elementum varius felis vulputate in. Suspendisse finibus augue nibh. Suspendisse sed ex id nulla maximus semper a id leo. Cras condimentum enim facilisis nibh hendrerit, eget luctus mi ultrices. Vivamus mollis, massa id condimentum maximus, justo urna fringilla justo, quis laoreet nulla dolor vitae orci. Fusce tincidunt nec diam ut volutpat. Morbi viverra euismod enim, vel vestibulum diam auctor at.</p> -->
+  <script>
+		ScrollReveal().reveal('#tired',{delay:1000})
+		ScrollReveal().reveal('#big', { delay: 2000 })
+		ScrollReveal().reveal('#small', { delay: 3000 })
+    /* ScrollReveal().reveal('#option', {
+    delay: 4000,
+    duration: 5000,
+    reset: true,
+    easing: 'cubic-bezier(.49,.89,.35,.09)',
+    origin: 'bottom'
+    
+});*/
+	</script>
+
+
+</body>
+</html>
